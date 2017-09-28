@@ -1,0 +1,27 @@
+Database : sailboat
+
+CREATE TABLE SailorDetails
+(
+sailorID int NOT NULL PRIMARY KEY,
+LastName varchar(255),
+FirstName varchar(255),
+BoatType varchar(255),
+BoatLength DECIMAL ,
+BuildYear int,
+MotorType varchar(255),
+slipFeePaid varchar(255),
+MooredSlip varchar(255)
+);
+
+INSERT INTO SailorDetails VALUES 
+(1,'Y S','Anish','Catalina',23.5,2006,'inboard','Yes','A1');
+INSERT INTO SailorDetails VALUES 
+(2,'Gaber','Sakr','Hunter',25,2006,'outboard','No','B1');
+INSERT INTO SailorDetails VALUES 
+(3,'John','Ammanda','Morgan',50,2006,'none','Yes','A19');
+INSERT INTO SailorDetails VALUES 
+(4,'kim','Kiesier','Catalina',40,2006,'outboard','Yes','A41');
+INSERT INTO SailorDetails VALUES 
+(5,'Hee','Frank','Hunter',38.45,2006,'outboard','No','B34');
+
+ALTER TABLE SailorDetails MODIFY COLUMN sailorID INT auto_increment
